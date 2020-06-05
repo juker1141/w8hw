@@ -1,0 +1,10 @@
+.navbar_menu{
+  position: absolute;
+  left: -120%;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: left 0.8s;
+  z-index: 120;
+}

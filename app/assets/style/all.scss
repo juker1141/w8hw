@@ -1,6 +1,7 @@
 @import "functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
 @import "helpers/variables";
 @import "bootstrap";
 @import "swiper";
 @import "base";
-// @import "layout";
+@import "layout";
