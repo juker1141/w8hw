@@ -1,6 +1,188 @@
-// 圖片背景區
+//全站設定
+body {
+  font-family: "Raleway", sans-serif;
+}
+// 小元件
+.mobileShow {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+.mobileHide {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  &-lg {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
+}
+.desktopShow {
+  display: block;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+.flex-row-md {
+  @include media-breakpoint-up(md) {
+    flex-direction: row !important;
+  }
+}
+.justify-content-between-lg {
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between !important;
+  }
+}
+.d-flex-xl {
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
+.positionTop_0 {
+  top: 0;
+}
+.zIndexMax {
+  z-index: 10000;
+}
+.navbarHeightAuto {
+  height: 56px;
+  @include media-breakpoint-up(md) {
+    height: 72px;
+  }
+}
+.mt_navbar {
+  margin-top: 56px;
+  @include media-breakpoint-up(md) {
+    margin-top: 72px;
+  }
+}
+.rounded_10 {
+  border-radius: 10px;
+}
+// 取消select預設樣式
+.selectArrowNone {
+  appearance: none;
+}
+//字體設定
+.fontRoboto {
+  font-family: "Roboto", sans-serif;
+}
+.fontJhengHei {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+.fontOpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+// 字體大小
+.fz_8 {
+  font-size: 8px;
+}
+.fz_12 {
+  font-size: 12px;
+}
+.fz_14 {
+  font-size: 14px;
+}
+.fz_16 {
+  font-size: 16px;
+}
+.fz_18 {
+  font-size: 18px;
+}
+.fz_20 {
+  font-size: 20px;
+}
+.fz_24 {
+  font-size: 24px;
+}
+.fz_32 {
+  font-size: 32px;
+}
+.fz_md_14 {
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+  }
+}
+.fz_md_16 {
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+.fz_md_24 {
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
+}
+.fz_md_32 {
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
+}
+.fz_md_48 {
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+}
+.fz_48 {
+  font-size: 48px;
+}
+// 推移工具
+.py_92 {
+  padding: 92px 0;
+}
+.mr_30 {
+  margin-right: 30px !important;
+}
+// 背景圖片
 .logoImg {
   background: url(../images/logo-aloha.svg) no-repeat;
   height: 24px;
   width: 96px;
+}
+
+.indexBannerImg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/index-banner.jpg) no-repeat;
+}
+.hotelAquaImg {
+  background: url(../images/top1.jpg) no-repeat;
+}
+.mrKawasakiInnImg {
+  background: url(../images/top2.jpg) no-repeat;
+}
+.weeklyParadiseImg {
+  background: url(../images/top3.jpg) no-repeat;
+}
+.beastHotelImg {
+  background: url(../images/top4.jpg) no-repeat;
+}
+.osakaImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Osaka.jpg) no-repeat;
+}
+.kyotoImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Kyoto.jpg) no-repeat;
+}
+.reykjavíkImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Reykjavic.jpg) no-repeat;
+}
+.parisImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Paris.jpg) no-repeat;
+}
+.romaImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Roman.jpg) no-repeat;
+}
+.bangkokImg {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Bangkok.jpg) no-repeat;
+}
+.italyImg {
+  background: url(../images/italy.jpg) no-repeat;
+}
+.thailandImg {
+  background: url(../images/Thailand.jpg) no-repeat;
+}
+.newZealandImg {
+  background: url(../images/NewZealand.jpg) no-repeat;
 }

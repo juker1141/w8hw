@@ -1,0 +1,122 @@
+.bgPosition {
+  background-position: 40%;
+  background-size: cover;
+  height: 320px;
+}
+.bannerPrevBtn,
+.bannerNextBtn {
+  font-size: 24px;
+  &:hover {
+    color: darken(white, 15%);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+}
+// search區塊
+.searchBlock {
+  height: 312px;
+  @include media-breakpoint-up(xl) {
+    height: 120px;
+  }
+}
+
+.searchPosition {
+  position: absolute;
+  top: -50px;
+}
+.searchSelectBox {
+  height: 56px;
+}
+.checkInBtn {
+  top: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  &::-webkit-calendar-picker-indicator {
+    width: 100%;
+  }
+}
+.form_xlInput {
+  @include media-breakpoint-up(xl) {
+    width: 232px;
+  }
+}
+.form_xlSubmitBtn {
+  width: 100%;
+  @include media-breakpoint-up(xl) {
+    width: 126px;
+  }
+}
+.swiper-container {
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+}
+.swiper-slidePlace {
+  width: 240px;
+  height: 255px;
+  @include media-breakpoint-up(md) {
+    width: 270px;
+    height: 272px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 255px;
+    height: 260px;
+  }
+}
+.swiperPlaceImg {
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 164px;
+  width: 240px;
+  @include media-breakpoint-up(md) {
+    width: 270px;
+    height: 185px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 255px;
+    height: 175px;
+  }
+}
+// 區塊
+.cardSmType {
+  background-position: center;
+  background-size: cover;
+  width: 330px;
+  height: 78px;
+  @include media-breakpoint-up(xl) {
+    width: 350px;
+  }
+}
+//Get Inspiration區塊
+
+.swiper-slideInspiration {
+  width: 240px;
+  height: 310px;
+  @include media-breakpoint-up(md) {
+    width: 210px;
+    height: 325px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 350px;
+    height: 400px;
+  }
+}
+.swiperInspirationImg {
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 240px;
+  height: 181px;
+  @include media-breakpoint-up(md) {
+    width: 210px;
+    height: 158px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 350px;
+    height: 263px;
+  }
+}

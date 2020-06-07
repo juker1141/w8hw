@@ -1,7 +1,11 @@
 @import "functions";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "helpers/variables";
+@import "helpers/carousel";
+@import "helpers/nav";
 @import "bootstrap";
 @import "swiper";
+@import "helpers/inputCalendar";
 @import "base";
 @import "layout";
+@import "index";

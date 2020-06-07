@@ -4,3 +4,331 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<!-- banner -->
+<section id="carouselExampleControls" class="carousel slide mt_navbar" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-block w-100 bgPosition indexBannerImg"></div>
+      <div class="carousel-caption d-block">
+        <h2 class="fz_32 fz_md_48 font-weight-bold">Discover your <br class="desktopShow"> ideal hotel</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100 bgPosition indexBannerImg"></div>
+      <div class="carousel-caption d-block">
+        <h2 class="fz_32 fz_md_48 font-weight-bold">Discover your <br class="desktopShow"> ideal hotel</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100 bgPosition indexBannerImg"></div>
+      <div class="carousel-caption d-block">
+        <h2 class="fz_32 fz_md_48 font-weight-bold">Discover your <br class="desktopShow"> ideal hotel</h2>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="material-icons bannerPrevBtn">
+      keyboard_arrow_left
+    </span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="material-icons bannerNextBtn">
+      keyboard_arrow_right
+    </span>
+    <span class="sr-only">Next</span>
+  </a>
+</section>
+<!-- search -->
+<section class="container">
+  <div class="row">
+    <div class="col col-md-10 offset-md-1 col-xl-10 offset-xl-1">
+      <div class="position-relative searchBlock">
+        <form class="p-4 bg-purple rounded searchPosition w-100 d-flex-xl">
+          <div class="form-group form_xlInput mb-xl-0 mr-xl-3">
+            <div class="d-flex align-items-center bg-white rounded px-3 searchSelectBox">
+              <span class="material-icons">
+                location_on
+              </span>
+              <select class="form-control selectArrowNone border-0 shadow-none rounded"
+                id="exampleFormControlSelect1 text-gray-2">
+                <option>Destination</option>
+                <option>Bangkok-Thailand</option>
+                <option>Osaka-Japan</option>
+                <option>Roma-Italy</option>
+                <option>Paris-London</option>
+                <option>Reykjavík-Iceland</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group form_xlInput mb-xl-0 mr-xl-3">
+            <div class="d-flex align-items-center bg-white rounded pl-3 searchSelectBox">
+              <span class="material-icons">
+                date_range
+              </span>
+              <div class="w-100 btn text-left text-gray-4 position-relative">
+                Check-in / Check-out
+                <input type="date" class="position-absolute w-100 checkInBtn">
+              </div>
+            </div>
+          </div>
+          <div class="form-group form_xlInput mb-xl-0 mr-xl-3">
+            <div class="d-flex align-items-center bg-white rounded px-3 searchSelectBox">
+              <span class="material-icons">
+                person
+              </span>
+              <select class="form-control selectArrowNone border-0 shadow-none rounded"
+                id="exampleFormControlSelect1 text-gray-2">
+                <option>Guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </div>
+          </div>
+          <input type="submit" class="btn btn-primary searchSelectBox font-weight-bold fontOpenSans form_xlSubmitBtn"
+            value="SEARCH">
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col">
+      <h4 class="font-weight-bold mb-4 fz_md_32">Top Choices</h4>
+      <nav class="mb-4">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active font-weight-bold fz_20 fz_md_24 border-0 text-gray-2" id="nav-home-tab"
+            data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup
+              class="fz_12 fz_md_14">128</sup></a>
+          <a class="nav-item nav-link font-weight-bold fz_20 fz_md_24 border-0 text-gray-2" id="nav-profile-tab"
+            data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+            aria-selected="false">Okinawa<sup class="fz_12 fz_md_14">67</sup></a>
+          <a class="nav-item nav-link font-weight-bold fz_20 fz_md_24 border-0 text-gray-2" id="nav-contact-tab"
+            data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+            aria-selected="false">Taipei<sup class="fz_12 fz_md_14">53</sup></a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="container swiper-container mb-8">
+            <div class="swiper-wrapper">
+              <a href="#" class="swiper-slide swiper-slidePlace mr_30">
+                <div class="card border-0 fontOpenSans">
+                  <div class="card-img-top swiperPlaceImg hotelAquaImg mb-2"></div>
+                  <div class="card-body p-0">
+                    <h5 class="font-weight-bold text-gray-1">Hotel Aqua</h5>
+                    <div class="text-gray-1 d-flex align-items-center">
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="text-gray-2 ml-1 fz_14">5.0<span class="gray-3 fz_12">・2k reviews</span></span>
+                    </div>
+                    <div class="d-flex align-items-center text-gray-2 fz_14">TWD 2,480<s
+                        class="text-gray-3 fz_12 ml-2">TWD
+                        3,980</s>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide swiper-slidePlace mr_30">
+                <div class="card border-0 fontOpenSans">
+                  <div class="card-img-top swiperPlaceImg mrKawasakiInnImg mb-2"></div>
+                  <div class="card-body p-0">
+                    <h5 class="font-weight-bold text-gray-1">Mr. Kawasaki Inn</h5>
+                    <div class="text-gray-1 d-flex align-items-center">
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="text-gray-2 ml-1 fz_14">4.0<span class="gray-3 fz_12">・500 reviews</span></span>
+                    </div>
+                    <div class="d-flex align-items-center text-gray-2 fz_14">TWD 3,380<s
+                        class="text-gray-3 fz_12 ml-2"></s>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide swiper-slidePlace mr_30">
+                <div class="card border-0 fontOpenSans">
+                  <div class="card-img-top swiperPlaceImg weeklyParadiseImg mb-2"></div>
+                  <div class="card-body p-0">
+                    <h5 class="font-weight-bold text-gray-1">Weekly Paradise</h5>
+                    <div class="text-gray-1 d-flex align-items-center">
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="text-gray-2 ml-1 fz_14">4.0<span class="gray-3 fz_12">・470 reviews</span></span>
+                    </div>
+                    <div class="d-flex align-items-center text-gray-2 fz_14">TWD 4,780<s
+                        class="text-gray-3 fz_12 ml-2"></s>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide swiper-slidePlace mr_30">
+                <div class="card border-0 fontOpenSans">
+                  <div class="card-img-top swiperPlaceImg beastHotelImg  mb-2"></div>
+                  <div class="card-body p-0">
+                    <h5 class="font-weight-bold text-gray-1">Beast Hotel</h5>
+                    <div class="text-gray-1 d-flex align-items-center">
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="material-icons fz_18">grade</span>
+                      <span class="text-gray-2 ml-1 fz_14">4.0<span class="gray-3 fz_12">・283 reviews</span></span>
+                    </div>
+                    <div class="d-flex align-items-center text-gray-2 fz_14">TWD 1,980<s
+                        class="text-gray-3 fz_12 ml-2"></s>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col col-md-6 col-xl-4">
+      <h4 class="font-weight-bold mb-4 fz_md_32">Popular Destinations</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 col-xl-4 mb-2 mb-md-4">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType osakaImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">JAPAN</span><br>Osaka</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 mb-2 mb-md-4">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType kyotoImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">JAPAN</span><br>Kyoto</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 mb-2 mb-md-4">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType reykjavíkImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">ICELAND</span><br>Reykjavík</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 mb-2 mb-md-4 mb-xl-8">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType parisImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">LONDON</span><br>Paris</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 mb-2 mb-md-6 mb-xl-8">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType romaImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">ITALY</span><br>Roma</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 mb-6 mb-md-6 mb-xl-8">
+      <div class="card bg-dark text-white border-0 rounded_10">
+        <div class="card-img cardSmType bangkokImg rounded_10 w-100"></div>
+        <div class="card-img-overlay d-flex align-items-center justify-content-between px-4">
+          <h5 class="card-title fz_24 m-0 font-weight-bold"><span
+              class="fz_12 text-light-2 fontOpenSans">THAILAND</span><br>Bangkok</h5>
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="font-weight-bold fz_md_32">Get Inspiration</h4>
+        <a href="#" class="btn btn-outline-primary font-weight-bold py-2 px-3">SEE MORE</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="container swiper-container mb-6 mb-xl-8">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide swiper-slideInspiration mr_30">
+            <div class="card border-0">
+              <div class="card-img-top swiperInspirationImg italyImg"></div>
+              <div class="card-body px-0 pt-3 pt-md-4">
+                <h5 class="fz_md_24 font-weight-bold text-gray-1">The fifth most visited country</h5>
+                <p class="card-text fz_12 fz_md_16 text-gray-2">Italy is the fifth most visited country in the world,
+                  with a total
+                  of 52.3
+                  million…
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide swiper-slideInspiration mr_30">
+            <div class="card border-0">
+              <div class="card-img-top swiperInspirationImg thailandImg"></div>
+              <div class="card-body px-0 pt-3 pt-md-4">
+                <h5 class="fz_md_24 font-weight-bold text-gray-1">Visit Thailand for Bangkok</h5>
+                <p class="card-text fz_12 fz_md_16 text-gray-2">Asian tourists primarily visit Thailand for Bangkok and
+                  the historical, natural, and…
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide swiper-slideInspiration mr_30">
+            <div class="card border-0">
+              <div class="card-img-top swiperInspirationImg newZealandImg"></div>
+              <div class="card-body px-0 pt-3 pt-md-4">
+                <h5 class="fz_md_24 font-weight-bold text-gray-1">Lord of the Rings Tour</h5>
+                <p class="card-text fz_12 fz_md_16 text-gray-2">The national cuisine has been described as Pacific Rim,
+                  incorporating the…</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
