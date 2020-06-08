@@ -119,3 +119,33 @@
     height: 263px;
   }
 }
+.datepicker {
+  width: 622px;
+  height: 320px;
+  left: -41px;
+  top: 55px;
+  z-index: 100;
+  &.active {
+    display: none !important;
+    @include media-breakpoint-up(xl) {
+      display: flex !important;
+    }
+  }
+}
+
+.selectDesktop {
+  list-style: none;
+  width: 232px;
+  left: -41px;
+  top: 55px;
+  &_item:hover {
+    background: #f1f0f8;
+  }
+}
+.destinationBlock.active,
+.guestsBlock.active {
+  display: none !important;
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+  }
+}

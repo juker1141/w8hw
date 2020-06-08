@@ -3,6 +3,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 // 小元件
+.d_none {
+  display: none !important;
+}
+.lh_1 {
+  line-height: 1 !important;
+}
 .mobileShow {
   display: flex;
   @include media-breakpoint-up(md) {
@@ -20,10 +26,16 @@ body {
   @include media-breakpoint-up(md) {
     display: flex;
   }
-  &-lg {
+  &_lg {
     display: none;
     @include media-breakpoint-up(lg) {
       display: flex;
+    }
+  }
+  &_xl {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
     }
   }
 }
@@ -51,6 +63,9 @@ body {
 .positionTop_0 {
   top: 0;
 }
+.zIndex100 {
+  z-index: 100;
+}
 .zIndexMax {
   z-index: 10000;
 }
@@ -69,8 +84,22 @@ body {
 .rounded_10 {
   border-radius: 10px;
 }
-.opacity_0{
+.rounded_left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+.rounded_right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+.opacity_0 {
   opacity: 0;
+}
+.verticalLine {
+  border-right: solid 1px #e6e3e3c2;
+}
+.h_84 {
+  height: 84% !important;
 }
 // 取消select預設樣式
 .selectArrowNone {
@@ -145,6 +174,9 @@ body {
 }
 .mr_30 {
   margin-right: 30px !important;
+}
+.pr_1 {
+  padding-right: 4px !important;
 }
 // 背景圖片
 .logoImg {
