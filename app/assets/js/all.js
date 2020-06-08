@@ -8,6 +8,10 @@ $(document).ready(() => {
     e.preventDefault();
     $(".dropdown_menu").toggleClass('active');
   });
+  $(".checkBlockBtn").click(function (e) { 
+    e.preventDefault();
+    $(".datepicker").toggle();
+  });
   // switch ($('title').text()) {
   //   case "Index":
   //     $('.footerBannerTitle').addClass('fz32');
@@ -65,4 +69,14 @@ const mySwiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+$(function () {
+  $('.datetimepicker').datepicker({
+  format: "yyyy-mm-dd", //設定格式為2019-04-01
+  autoclose: true,//選擇日期後就會自動關閉
+  startDate: "today",//起始日期為今天
+  todayHighlight: true,//今天會有一個底色
+  language: 'zh-TW'//中文化
+  });
 });
