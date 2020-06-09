@@ -108,9 +108,16 @@
   }
 }
 
-.description {
-  list-style: none;
-}
 .footerDropdown {
   display: none;
+}
+// result layoutHeader
+.resultLayoutHeaderBlock {
+  @include media-breakpoint-up(md) {
+    width: 180px;
+    height: 56px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 312px;
+  }
 }
