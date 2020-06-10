@@ -121,3 +121,17 @@
     width: 312px;
   }
 }
+.resultLayoutHeaderBtn {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+    width: 126px;
+    height: 56px;
+  }
+}
+.resultLayoutHeader {
+  display: none;
+  &.loaded {
+    display: flex;
+  }
+}

@@ -15,6 +15,12 @@ body {
     display: none;
   }
 }
+.mobileShowBlock {
+  display: block;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
 .mobileShow_xl {
   display: flex;
   @include media-breakpoint-up(xl) {
@@ -40,11 +46,12 @@ body {
   }
 }
 .desktopShow {
-  display: block;
+  display: none !important;
   @include media-breakpoint-up(xl) {
-    display: none;
+    display: flex !important;
   }
 }
+
 .flex-row-md {
   @include media-breakpoint-up(md) {
     flex-direction: row !important;
@@ -63,8 +70,11 @@ body {
 .positionTop_0 {
   top: 0;
 }
-.positionTop_72 {
-  top: 72px;
+.positionTopLayout {
+  top: 56px;
+  @include media-breakpoint-up(md) {
+    top: 72px;
+  }
 }
 .zIndex100 {
   z-index: 100;
@@ -107,6 +117,15 @@ body {
 .listStyle_none {
   list-style: none;
 }
+.w_50 {
+  width: 50%;
+  &_xl {
+    width: auto;
+    @include media-breakpoint-up(xl) {
+      width: 50%;
+    }
+  }
+}
 // 取消select預設樣式
 .selectArrowNone {
   appearance: none;
@@ -146,6 +165,11 @@ body {
 .fz_32 {
   font-size: 32px;
 }
+.fz_md_12 {
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+}
 .fz_md_14 {
   @include media-breakpoint-up(md) {
     font-size: 14px;
@@ -171,6 +195,11 @@ body {
     font-size: 48px;
   }
 }
+.fz_xl_16 {
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
 .fz_48 {
   font-size: 48px;
 }
@@ -183,6 +212,18 @@ body {
 }
 .pr_1 {
   padding-right: 4px !important;
+}
+.py-10 {
+  padding: 10px 0;
+}
+.result_layout_mt {
+  margin-top: 106px;
+  @include media-breakpoint-up(md) {
+    margin-top: 160px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 176px;
+  }
 }
 // 背景圖片
 .logoImg {
