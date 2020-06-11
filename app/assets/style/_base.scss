@@ -45,6 +45,24 @@ body {
     }
   }
 }
+.mobileDesktopShow {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
+.tabletShow {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
 .desktopShow {
   display: none !important;
   @include media-breakpoint-up(xl) {
@@ -126,6 +144,12 @@ body {
     }
   }
 }
+.textTransform_none {
+  text-transform: none;
+}
+.textTransform_uppercase {
+  text-transform: uppercase;
+}
 // 取消select預設樣式
 .selectArrowNone {
   appearance: none;
@@ -143,6 +167,9 @@ body {
 // 字體大小
 .fz_8 {
   font-size: 8px;
+}
+.fz_10 {
+  font-size: 10px;
 }
 .fz_12 {
   font-size: 12px;
@@ -215,6 +242,16 @@ body {
 }
 .py-10 {
   padding: 10px 0;
+}
+.ml_-20 {
+  margin-left: -20px;
+}
+.mt_-24 {
+  margin-top: -24px;
+}
+.mx_-24 {
+  margin-right: -24px;
+  margin-left: -24px;
 }
 .result_layout_mt {
   margin-top: 106px;

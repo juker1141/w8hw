@@ -1,6 +1,49 @@
-.sortList{
-  top: 40px;
-  width: 95%;
-  height: 100px !important;
+.sortList {
+  // top: 40px;
+  left: 15px;
+  right: 15px;
+  max-width: 510px;
+  height: auto !important;
   background: #f1f0f8;
+  padding: 24px;
+  display: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  &.active {
+    display: block;
+  }
+  @include media-breakpoint-up(md) {
+    position: relative !important;
+    left: 0;
+    right: 0;
+    padding: 0;
+    max-width: 100%;
+    background: transparent;
+    box-shadow: none;
+    height: 100% !important;
+  }
+}
+.checkBoxBtn {
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+}
+.checkBox_check {
+  display: none;
+}
+.checkBoxBtn:checked + .form-check-label {
+  .checkBox_border {
+    display: none;
+  }
+}
+.checkBoxBtn:checked + .form-check-label {
+  .checkBox_check {
+    display: block;
+  }
+}
+.filterBlock {
+  top: 0;
+  width: 102vw;
+  left: 0;
+  right: 0;
+  z-index: 10001;
 }

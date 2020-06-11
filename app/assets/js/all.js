@@ -20,6 +20,10 @@ $(document).ready(() => {
     e.preventDefault();
     $(".guestsBlock").toggleClass('active');
   });
+  $(".sortBtn").click(function (e) {
+    e.preventDefault();
+    $(".sortList").toggleClass('active');
+  });
   switch ($('title').text()) {
     case "Result":
       $('.resultLayoutHeader').addClass('loaded');

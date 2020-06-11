@@ -9,34 +9,367 @@ current: index
     <div class="col-12 col-md-4">
       <h2 class="font-weight-bold text-center text-md-left">Bangkok<sup class="text-primary">3,240</sup></h2>
     </div>
-    <div class="col col-md-8 position-relative">
-      <div class="d-flex justify-content-center">
+    <div class="col-12 col-md-8 position-relative">
+      <div class="justify-content-center mobileShow">
         <a href="#" class="btn d-flex align-items-center font-weight-bold">
           <span class="material-icons mr-2">
-          filter_list
+            filter_list
           </span>
           FILTER
         </a>
         <div class="verticalLine my-1"></div>
-        <a href="#" class="btn d-flex align-items-center font-weight-bold">
+        <a href="#" class="btn d-flex align-items-center font-weight-bold sortBtn">
           <span class="material-icons mr-2">
-          sort
+            sort
           </span>
           SORT
         </a>
       </div>
       <ul
-        class="fontOpenSans listStyle_none d-md-flex p-0 m-0 justify-content-start align-items-end h-100 fz_14 fz_md_12 fz_xl_16 justify-content-md-end justify-content-xl-start sortList position-absolute shadow">
-        <li class="mr-4"><a href="#" class="font-weight-bold">Recommended</a></li>
-        <li class="mr-4"><a href="#" class="font-weight-bold text-dark">Lowest Price</a></li>
-        <li class="mr-4"><a href="#" class="font-weight-bold text-dark">Best value</a></li>
+        class="fontOpenSans listStyle_none d-md-flex m-0 justify-content-start align-items-md-end h-100 fz_14 fz_md_12 fz_xl_16 justify-content-md-end justify-content-xl-start sortList position-absolute rounded zIndex100">
+        <li class="mr-4 mb-3 mb-md-0"><a href="#" class="font-weight-bold">Recommended</a></li>
+        <li class="mr-4 mb-3 mb-md-0"><a href="#" class="font-weight-bold text-dark">Lowest Price</a></li>
+        <li class="mr-4 mb-3 mb-md-0"><a href="#" class="font-weight-bold text-dark">Best value</a></li>
         <li><a href="#" class="font-weight-bold text-dark">Distance to City Center</a></li>
       </ul>
-    </div>
-    <div class="col-md-4">
-
     </div>
   </div>
 
 
+
+</section>
+<section class="container">
+  <div class="row position-absolute filterBlock">
+    <div class="col-md-4 p-0">
+      <div class="">
+        <form action="#" class="fontOpenSans bg-purple rounded p-4">
+          <div class="form-group bg-white mt_-24 mx_-24 p-24 mobileShow">
+            <div class="d-flex align-items-center justify-content-between p-4 w-100">
+              <div class="d-flex align-items-center font-weight-bold">
+                <span class="material-icons mr-2">
+                  filter_list
+                </span>
+                FILTER
+              </div>
+              <a href="#" class="d-flex align-items-center text-dark btn p-0">
+                <span class="material-icons">
+                  close
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+          <div class="form-group">
+            <h6 class="font-weight-bold">Deals</h6>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="freeCancellation">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="freeCancellation">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Free cancellation
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="noPrepayment">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="noPrepayment">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                No prepayment
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="specialOffers">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="specialOffers">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Special offers
+              </label>
+            </div>
+          </div>
+          <hr class="my-4 border-white">
+          <div class="form-group">
+            <h6 class="font-weight-bold">Popular filter</h6>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="breakfastIncluded">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="breakfastIncluded">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Breakfast included
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="freeWiFi">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="freeWiFi">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Free Wi-Fi
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="swimmingPool">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="swimmingPool">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Swimming pool
+              </label>
+            </div>
+          </div>
+          <hr class="my-4 border-white">
+          <div class="form-group">
+            <h6 class="font-weight-bold">Budget</h6>
+            <input type="range" class="custom-range mb-3" min="0" max="4" step="0.5" id="customRange2">
+            <div class="mobileDesktopShow align-items-center">
+              <div class="bg-white textTransform_uppercase fz_12 font-weight-bold w-50 p-2 rounded">
+                Min price<br><span class="fz_14 font-weight-normal text-gray-2">TWD 800</span>
+              </div>
+              <div class="bg-purple mx-2">-</div>
+              <div class="bg-white textTransform_uppercase fz_12 font-weight-bold w-50 p-2 rounded">
+                Max price<br><span class="fz_14 font-weight-normal text-gray-2">TWD 4,000+</span>
+              </div>
+            </div>
+            <div class="tabletShow bg-white">
+              <div class="bg-white textTransform_uppercase fz_10 font-weight-bold w-50 p-2 rounded-left">
+                Min price<br><span class="font-weight-normal text-gray-2">TWD 800</span>
+              </div>
+              <div class="verticalLine my-2"></div>
+              <div class="bg-white textTransform_uppercase fz_10 font-weight-bold w-50 p-2 rounded-right">
+                Max price<br><span class="font-weight-normal text-gray-2">TWD 4,000+</span>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 border-white">
+          <div class="form-group">
+            <h6 class="font-weight-bold">Rating</h6>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="fiveStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="fiveStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18 mr-2">
+                  star
+                </span>
+                5.0
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="fourStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="fourStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18 mr-2">
+                  star
+                </span>
+                4.0
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="threeStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="threeStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18 mr-2">
+                  star
+                </span>
+                3.0
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="twoStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="twoStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                <span class="material-icons text-dark fz_18">
+                  star
+                </span>
+                <span class="material-icons text-dark fz_18 mr-2">
+                  star
+                </span>
+                2.0
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="oneStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="oneStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                <span class="material-icons text-dark fz_18 mr-2">
+                  star
+                </span>
+                1.0
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="threeStar">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="threeStar">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Unrated
+              </label>
+            </div>
+          </div>
+          <hr class="my-4 border-white">
+          <div class="form-group m-0">
+            <h6 class="font-weight-bold">Stay type</h6>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="typeHotel">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="typeHotel">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Hotel
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="typeApartment">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="typeApartment">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Apartment
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-2">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="typeUnique">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="typeUnique">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Unique
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input checkBoxBtn opacity_0" type="checkbox" id="typeHostel">
+              <label
+                class="form-check-label d-flex align-items-center textTransform_none fz_16 fz_md_14 fz_xl_16 font-weight-normal text-gray-2"
+                for="typeHostel">
+                <span class="material-icons mr-1 text-dark ml_-20 checkBox_border">
+                  check_box_outline_blank
+                </span>
+                <span class="material-icons mr-1 text-primary ml_-20 checkBox_check">
+                  check_box
+                </span>
+                Hostel
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
 </section>
