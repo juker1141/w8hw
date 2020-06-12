@@ -24,6 +24,18 @@ $(document).ready(() => {
     e.preventDefault();
     $(".sortList").toggleClass('active');
   });
+  $(".filterBlockShowBtn").click(function (e) {
+    e.preventDefault();
+    $(".filterPage").toggleClass('active');
+  });
+  $(".filterBlockCloseBtn").click(function (e) {
+    e.preventDefault();
+    $(".filterPage").toggleClass('active');
+  });
+  $(".filterBlockDoneBtn").click(function (e) {
+    e.preventDefault();
+    $(".filterPage").toggleClass('active');
+  });
   switch ($('title').text()) {
     case "Result":
       $('.resultLayoutHeader').addClass('loaded');

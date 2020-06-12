@@ -1,5 +1,8 @@
 //全站設定
+html,
 body {
+  width: 100%;
+  overflow-x: hidden !important;
   font-family: "Raleway", sans-serif;
 }
 // 小元件
@@ -252,6 +255,9 @@ body {
 .mx_-24 {
   margin-right: -24px;
   margin-left: -24px;
+}
+.mb_128{
+  margin-bottom: 128px;
 }
 .result_layout_mt {
   margin-top: 106px;

@@ -42,8 +42,26 @@
 }
 .filterBlock {
   top: 0;
-  width: 102vw;
-  left: 0;
+  width: 100vw;
   right: 0;
   z-index: 10001;
+  @include media-breakpoint-up(md) {
+    z-index: auto;
+    position: relative !important;
+    width: auto;
+  }
+}
+.mobileFilterBtn{
+  top: 78vh;
+  width: 97.5vw;
+}
+.filterPage{
+  display: none;
+  &.active{
+    display: block !important;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+    position: relative !important;
+  }
 }

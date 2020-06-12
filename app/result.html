@@ -11,7 +11,7 @@ current: index
     </div>
     <div class="col-12 col-md-8 position-relative">
       <div class="justify-content-center mobileShow">
-        <a href="#" class="btn d-flex align-items-center font-weight-bold">
+        <a href="#" class="btn d-flex align-items-center font-weight-bold filterBlockShowBtn">
           <span class="material-icons mr-2">
             filter_list
           </span>
@@ -38,11 +38,11 @@ current: index
 
 
 </section>
-<section class="container">
+<section class="container filterPage">
   <div class="row position-absolute filterBlock">
-    <div class="col-md-4 p-0">
-      <div class="">
-        <form action="#" class="fontOpenSans bg-purple rounded p-4">
+    <div class="col-12 col-md-4 p-sm-0">
+      <div class="position-relative">
+        <form action="#" class="fontOpenSans bg-purple rounded p-4 mb_128">
           <div class="form-group bg-white mt_-24 mx_-24 p-24 mobileShow">
             <div class="d-flex align-items-center justify-content-between p-4 w-100">
               <div class="d-flex align-items-center font-weight-bold">
@@ -51,7 +51,7 @@ current: index
                 </span>
                 FILTER
               </div>
-              <a href="#" class="d-flex align-items-center text-dark btn p-0">
+              <a href="#" class="d-flex align-items-center text-dark btn p-0 filterBlockCloseBtn">
                 <span class="material-icons">
                   close
                 </span>
@@ -368,6 +368,13 @@ current: index
             </div>
           </div>
         </form>
+        <div class="bg-dark position-fixed text-white p-3 font-weight-bold mobileFilterBtn mobileShow">
+          <h4 class="mb-3 text-light">Find 1,245 results</h4>
+          <div class="d-flex align-items-center w-100">
+            <a href="#" class="btn textTransform_uppercase text-white border-white w-50 mr-2 font-weight-bold fz_14 py-3">Clear</a>
+            <a href="#" class="btn textTransform_uppercase text-white btn-primary w-50 font-weight-bold fz_14 py-3 filterBlockDoneBtn">Filter</a>
+          </div>
+        </div>
       </div>
 
     </div>
