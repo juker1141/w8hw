@@ -26,15 +26,15 @@ $(document).ready(() => {
   });
   $(".filterBlockShowBtn").click(function (e) {
     e.preventDefault();
-    $(".filterPage").toggleClass('active');
+    $(".filterBlock").toggleClass('active');
   });
   $(".filterBlockCloseBtn").click(function (e) {
     e.preventDefault();
-    $(".filterPage").toggleClass('active');
+    $(".filterBlock").toggleClass('active');
   });
   $(".filterBlockDoneBtn").click(function (e) {
     e.preventDefault();
-    $(".filterPage").toggleClass('active');
+    $(".filterBlock").toggleClass('active');
   });
   switch ($('title').text()) {
     case "Result":

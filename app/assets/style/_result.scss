@@ -41,27 +41,75 @@
   }
 }
 .filterBlock {
-  top: 0;
+  top: -209px;
   width: 100vw;
-  right: 0;
   z-index: 10001;
+  display: none;
+  &.active {
+    display: block;
+  }
+  @media (min-width: 575px) {
+    right: 7vw;
+  }
+  @media (min-width: 740px) {
+    right: 12vw;
+  }
   @include media-breakpoint-up(md) {
     z-index: auto;
     position: relative !important;
+    top: 0;
+    right: 0;
     width: auto;
+    display: block;
   }
 }
-.mobileFilterBtn{
+.mobileFilterBtn {
   top: 78vh;
-  width: 97.5vw;
+  left: 0;
+  width: 100%;
 }
-.filterPage{
-  display: none;
-  &.active{
+// .filterPage {
+//   display: none;
+//   &.active {
+//     display: block !important;
+//   }
+//   @include media-breakpoint-up(md) {
+//     display: block;
+//     position: relative !important;
+//   }
+// }
+.card_img {
+  background-size: cover;
+  background-position: center;
+}
+.resultRoomImg {
+  height: 150px;
+  width: 150px;
+  @include media-breakpoint-up(md) {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 255px;
+    height: 175px;
+  }
+}
+.roomDeals {
+  width: 115px !important;
+  @include media-breakpoint-up(xl) {
+    width: 120px !important;
+  }
+}
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  .roomName {
+    text-decoration: underline;
+  }
+  .card_imgPrev,
+  .card_imgNext {
     display: block !important;
   }
-  @include media-breakpoint-up(md) {
-    display: block;
-    position: relative !important;
-  }
+}
+.page-hover:hover {
+  background: #fff !important;
 }

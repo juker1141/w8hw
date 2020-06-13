@@ -12,6 +12,9 @@ body {
 .lh_1 {
   line-height: 1 !important;
 }
+.lh_15 {
+  line-height: 1.5 !important;
+}
 .mobileShow {
   display: flex;
   @include media-breakpoint-up(md) {
@@ -44,6 +47,12 @@ body {
   &_xl {
     display: none;
     @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+  }
+  &_xl_block {
+    display: none;
+    @include media-breakpoint-up(xl) {
       display: block;
     }
   }
@@ -72,7 +81,12 @@ body {
     display: flex !important;
   }
 }
-
+.desktopHide {
+  display: flex !important;
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
 .flex-row-md {
   @include media-breakpoint-up(md) {
     flex-direction: row !important;
@@ -129,6 +143,11 @@ body {
 .opacity_0 {
   opacity: 0;
 }
+.opacity_md_1 {
+  @include media-breakpoint-up(md) {
+    opacity: 1;
+  }
+}
 .verticalLine {
   border-right: solid 1px #e6e3e3c2;
 }
@@ -153,6 +172,9 @@ body {
 .textTransform_uppercase {
   text-transform: uppercase;
 }
+.textDecorationNone {
+  text-decoration: none;
+}
 // 取消select預設樣式
 .selectArrowNone {
   appearance: none;
@@ -166,6 +188,9 @@ body {
 }
 .fontOpenSans {
   font-family: "Open Sans", sans-serif;
+}
+.fontRaleway {
+  font-family: "Raleway", sans-serif;
 }
 // 字體大小
 .fz_8 {
@@ -194,6 +219,9 @@ body {
 }
 .fz_32 {
   font-size: 32px;
+}
+.fz_48 {
+  font-size: 48px;
 }
 .fz_md_12 {
   @include media-breakpoint-up(md) {
@@ -225,13 +253,25 @@ body {
     font-size: 48px;
   }
 }
+.fz_xl_12 {
+  @include media-breakpoint-up(xl) {
+    font-size: 12px;
+  }
+}
+.fz_xl_14 {
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+  }
+}
 .fz_xl_16 {
   @include media-breakpoint-up(xl) {
     font-size: 16px;
   }
 }
-.fz_48 {
-  font-size: 48px;
+.fz_xl_24 {
+  @include media-breakpoint-up(xl) {
+    font-size: 24px;
+  }
 }
 // 推移工具
 .py_92 {
@@ -246,6 +286,9 @@ body {
 .py-10 {
   padding: 10px 0;
 }
+.px_12 {
+  padding: 0 12px;
+}
 .ml_-20 {
   margin-left: -20px;
 }
@@ -256,8 +299,17 @@ body {
   margin-right: -24px;
   margin-left: -24px;
 }
-.mb_128{
+.mb_128 {
   margin-bottom: 128px;
+}
+.px_15 {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+.px_md_15 {
+  @include media-breakpoint-up(md) {
+    padding: 0 15px !important;
+  }
 }
 .result_layout_mt {
   margin-top: 106px;
@@ -316,5 +368,35 @@ body {
 }
 .newZealandImg {
   background: url(../images/NewZealand.jpg) no-repeat;
+}
+.rachadahotelImg {
+  background: url(../images/Rachada1.jpg) no-repeat;
+}
+.foreverplaceImg {
+  background: url(../images/Phaya.jpg) no-repeat;
+}
+.luvhotelImg {
+  background: url(../images/Bangkapi.jpg) no-repeat;
+}
+.wowlifehotelImg {
+  background: url(../images/Chatuchack1.jpg) no-repeat;
+}
+.celebritypalaceImg {
+  background: url(../images/Chatuchack2.jpg) no-repeat;
+}
+.rrspaceImg {
+  background: url(../images/RangRak.jpg) no-repeat;
+}
+.bangkokhostelImg {
+  background: url(../images/Watana1.jpg) no-repeat;
+}
+.watanafirsthostelImg {
+  background: url(../images/Watana2.jpg) no-repeat;
+}
+.ddspaceImg {
+  background: url(../images/DinDaeng.jpg) no-repeat;
+}
+.dininnhotelImg {
+  background: url(../images/DinDaeng2.jpg) no-repeat;
 }
 //datepicker設定
