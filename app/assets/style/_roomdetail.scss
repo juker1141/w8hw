@@ -91,10 +91,10 @@
   }
 }
 .orderBlock {
-  top: 70vh;
+  top: 78vh;
   display: none;
   @include media-breakpoint-up(md) {
-    top: 83vh;
+    top: 87.5vh;
   }
   &.active {
     display: block;
