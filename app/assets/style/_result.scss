@@ -102,6 +102,7 @@
 }
 .card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  text-decoration: none;
   .roomName {
     text-decoration: underline;
   }
@@ -112,4 +113,34 @@
 }
 .page-hover:hover {
   background: #fff !important;
+}
+.resultPageBannerBtn-group {
+  width: 330px !important;
+  @include media-breakpoint-up(md) {
+    width: 450px !important;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 635px !important;
+  }
+}
+.resultPageBannerTitle {
+  font-size: 24px;
+  margin-bottom: 16px !important;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0 !important;
+    margin-right: 70px !important;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 32px;
+    margin-right: 36px !important;
+  }
+}
+.resultPageBannerInput {
+  width: 212px !important;
+  @include media-breakpoint-up(md) {
+    width: 300px !important;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 485px !important;
+  }
 }

@@ -129,6 +129,11 @@ body {
     margin-top: 72px;
   }
 }
+.rounded_md {
+  @include media-breakpoint-up(md) {
+    border-radius: 0.25rem;
+  }
+}
 .rounded_10 {
   border-radius: 10px;
 }
@@ -142,6 +147,9 @@ body {
 }
 .opacity_0 {
   opacity: 0;
+}
+.opacity_9 {
+  opacity: 0.9;
 }
 .opacity_md_1 {
   @include media-breakpoint-up(md) {
@@ -202,6 +210,9 @@ body {
 .fz_12 {
   font-size: 12px;
 }
+.fz_13 {
+  font-size: 13px;
+}
 .fz_14 {
   font-size: 14px;
 }
@@ -219,6 +230,9 @@ body {
 }
 .fz_32 {
   font-size: 32px;
+}
+.fz_32_important {
+  font-size: 32px !important;
 }
 .fz_48 {
   font-size: 48px;
@@ -283,11 +297,17 @@ body {
 .pr_1 {
   padding-right: 4px !important;
 }
-.py-10 {
+.py_10 {
   padding: 10px 0;
+}
+.py_12 {
+  padding: 12px 0;
 }
 .px_12 {
   padding: 0 12px;
+}
+.mx_42 {
+  margin: 0 42px;
 }
 .ml_-20 {
   margin-left: -20px;
@@ -302,11 +322,15 @@ body {
 .mb_128 {
   margin-bottom: 128px;
 }
+.my_xl_20 {
+  margin: 20px 0;
+}
 .px_15 {
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
 .px_md_15 {
+  padding: 0 !important;
   @include media-breakpoint-up(md) {
     padding: 0 15px !important;
   }
@@ -372,6 +396,15 @@ body {
 .rachadahotelImg {
   background: url(../images/Rachada1.jpg) no-repeat;
 }
+.rachadahotel_2Img {
+  background: url(../images/Rachada2.jpg) no-repeat;
+}
+.rachadahotel_3Img {
+  background: url(../images/Rachada3.jpg) no-repeat;
+}
+.rachadahotel_4Img {
+  background: url(../images/Rachada4.jpg) no-repeat;
+}
 .foreverplaceImg {
   background: url(../images/Phaya.jpg) no-repeat;
 }
@@ -398,5 +431,11 @@ body {
 }
 .dininnhotelImg {
   background: url(../images/DinDaeng2.jpg) no-repeat;
+}
+.roomAImg {
+  background: url(../images/roomA.jpg) no-repeat;
+}
+.roomBImg {
+  background: url(../images/roomB.jpg) no-repeat;
 }
 //datepicker設定

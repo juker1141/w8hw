@@ -36,19 +36,30 @@ $(document).ready(() => {
     e.preventDefault();
     $(".filterBlock").toggleClass('active');
   });
+  $(".roomTypeBtn").click(function (e) {
+    e.preventDefault();
+    $(".orderBlock").toggleClass('active');
+  });
+  $(".orderBtn_cancelBtn").click(function (e) {
+    e.preventDefault();
+    $(".orderBlock").toggleClass('active');
+  });
   switch ($('title').text()) {
     case "Result":
       $('.resultLayoutHeader').addClass('loaded');
+      $('.py_92').addClass('py-4');
+      $('.footerBanner').addClass('flex-md-row');
+      $('.footerBannerTitle').addClass('resultPageBannerTitle');
+      $('.btn-group').addClass('resultPageBannerBtn-group');
+      $('.emailSubscribeInput').addClass('resultPageBannerInput');
       break;
-    case "Productdetail":
-      $('.product_logo_icon').addClass('text-primary');
-      $('.menuBtn').addClass('text-primary');
-      $('.shopping_cartBtn').addClass('text-primary');
-      $('.nav-link').addClass('text-dark');
-      if (i == 'https://juker1141.github.io/w6hw/information.html') {
-        $('.shopping-cart-page').addClass('active');
-        $('.darkShady').show();
-      }
+    case "RoomDetail":
+      $('.resultLayoutHeader').addClass('loaded');
+      $('.py_92').addClass('py-4');
+      $('.footerBanner').addClass('flex-md-row');
+      $('.footerBannerTitle').addClass('resultPageBannerTitle');
+      $('.btn-group').addClass('resultPageBannerBtn-group');
+      $('.emailSubscribeInput').addClass('resultPageBannerInput');
       break;
     case "Information":
       $('.product_logo_icon').addClass('text-primary');
