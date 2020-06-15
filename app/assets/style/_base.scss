@@ -131,7 +131,7 @@ body {
 }
 .rounded_md {
   @include media-breakpoint-up(md) {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem !important;
   }
 }
 .rounded_10 {
@@ -148,9 +148,9 @@ body {
 .opacity_0 {
   opacity: 0;
 }
-.bg_dark_opacity_10{
+.bg_dark_opacity_10 {
   background: #121212;
-  opacity: .9;
+  opacity: 0.9;
 }
 .opacity_md_1 {
   @include media-breakpoint-up(md) {
@@ -183,6 +183,16 @@ body {
 }
 .textDecorationNone {
   text-decoration: none;
+}
+.bg_md_transparent {
+  @include media-breakpoint-up(md) {
+    background: transparent !important;
+  }
+}
+.bg_md_purple {
+  @include media-breakpoint-up(md) {
+    background: #f1f0f8;
+  }
 }
 // 取消select預設樣式
 .selectArrowNone {
@@ -307,8 +317,19 @@ body {
 .px_12 {
   padding: 0 12px;
 }
+.px_15 {
+  padding: 0 15px;
+}
 .mx_42 {
   margin: 0 42px;
+}
+.mt_-12 {
+  margin-top: -12px;
+}
+.mt_md_-16 {
+  @include media-breakpoint-up(md) {
+    margin-top: -16px !important;
+  }
 }
 .ml_-20 {
   margin-left: -20px;
@@ -334,6 +355,11 @@ body {
   padding: 0 !important;
   @include media-breakpoint-up(md) {
     padding: 0 15px !important;
+  }
+}
+.mb_md_15 {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 15px;
   }
 }
 .result_layout_mt {

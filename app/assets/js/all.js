@@ -44,6 +44,13 @@ $(document).ready(() => {
     e.preventDefault();
     $(".orderBlock").toggleClass('active');
   });
+  $(".reserveDetailListBtn").click(function (e) {
+    e.preventDefault();
+    $(".reserveDetailList").toggleClass('active');
+    $(".reserveDetailListHeadPrice").toggleClass('active');
+    $(".reserveDetailListHead").toggleClass('justify-content-between');
+    $(".reserveDetailListHead").toggleClass('justify-content-end');
+  });
   switch ($('title').text()) {
     case "Result":
       $('.resultLayoutHeader').addClass('loaded');

@@ -98,6 +98,7 @@
   width: 115px !important;
   @include media-breakpoint-up(xl) {
     width: 120px !important;
+    height: 25px;
   }
 }
 .card:hover {
