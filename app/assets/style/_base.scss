@@ -148,8 +148,9 @@ body {
 .opacity_0 {
   opacity: 0;
 }
-.opacity_9 {
-  opacity: 0.9;
+.bg_dark_opacity_10{
+  background: #121212;
+  opacity: .9;
 }
 .opacity_md_1 {
   @include media-breakpoint-up(md) {
