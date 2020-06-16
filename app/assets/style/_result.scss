@@ -43,7 +43,7 @@
 .filterBlock {
   top: -209px;
   width: 100vw;
-  z-index: 10001;
+  z-index: 300;
   display: none;
   &.active {
     display: block;
@@ -68,16 +68,6 @@
   left: 0;
   width: 100%;
 }
-// .filterPage {
-//   display: none;
-//   &.active {
-//     display: block !important;
-//   }
-//   @include media-breakpoint-up(md) {
-//     display: block;
-//     position: relative !important;
-//   }
-// }
 .card_img {
   background-size: cover;
   background-position: center;

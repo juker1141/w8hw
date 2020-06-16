@@ -75,23 +75,15 @@ $(document).ready(() => {
       $('.reservePageCol').addClass('offset-xl-2');
       $('.reservePageCol').removeClass('justify-content-md-between');
       break;
-    case "Payment":
-      $('.product_logo_icon').addClass('text-primary');
-      $('.navbar').addClass('align-left');
-      $('.l-header .col').addClass('offset-xl-1');
-      $('.navbar-toggler').hide();
-      $('.menuBtn span').hide();
-      $('.shopping_cartBtn span').hide();
-      $('.nav-link').hide();
-      $('.l_footer').hide();
+    case "Reserve_success":
+      $('.reservePageHide').hide();
+      $(".jumbotron").hide();
+      $('.reservePageCol').addClass('col-xl-8');
+      $('.reservePageCol').addClass('offset-xl-2');
+      $('.reservePageCol').removeClass('justify-content-md-between');
       break;
-    case "Paydone":
-      $('.navbar').addClass('align-left');
-      $('.navbar-toggler').hide();
-      $('.menuBtn span').hide();
-      $('.shopping_cartBtn span').hide();
-      $('.nav-link').hide();
-      $('.l_footer').hide();
+    case "Login":
+      $('.loginPageHide').addClass('d_none');
       break;
   }
 });

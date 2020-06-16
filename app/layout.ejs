@@ -22,7 +22,8 @@
 
 <body>
   <!-- l-header start -->
-  <div class="w-100 bg-white navbarHeightAuto d-flex justify-content-center positionTop_0 position-fixed zIndexMax">
+  <div
+    class="w-100 bg-white navbarHeightAuto d-flex justify-content-center positionTop_0 position-fixed zIndexMax loginPageHide">
     <div class="container">
       <nav class="navbar bg-white p-0">
         <button class="navbar-toggler navbar_menuBtn mobileShow p-0" type="button"
@@ -52,8 +53,8 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="text-dark fontRoboto">Login</a>
-          <div class="dropdown_menu d-flex flex-column p-3 bg-purple" aria-labelledby="navbarDropdown">
+          <a href="login.html" class="text-dark fontRoboto">Login</a>
+          <div class="dropdown_menu d-flex flex-column p-3 bg-purple zIndexMax" aria-labelledby="navbarDropdown">
             <a class="dropdown_item pb-2 text-decoration-none text-dark" href="#">English</a>
             <a class="dropdown_item pb-2 text-decoration-none text-dark fontJhengHei" href="#">中文(繁體)</a>
             <a class="dropdown_item text-decoration-none text-dark fontJhengHei" href="#">日本語</a>
@@ -64,7 +65,7 @@
     </div>
   </div>
   <div
-    class="w-100 bg-purple justify-content-center position-fixed zIndexMax fontOpenSans resultLayoutHeader positionTopLayout">
+    class="w-100 bg-purple justify-content-center position-fixed zIndex500 fontOpenSans resultLayoutHeader positionTopLayout loginPageHide">
     <div class="container d-flex align-items-center justify-content-center">
       <div class="mobileHide align-items-center">
         <ul class="d-flex listStyle_none p-0 my-md-3 my-xl-4 ">
@@ -133,7 +134,7 @@
   <!-- l-header end -->
   <%- contents %>
   <!-- l-footer start -->
-  <div class="jumbotron jumbotron-fluid py_92 m-0 bg-purple">
+  <div class="jumbotron jumbotron-fluid py_92 m-0 bg-purple loginPageHide">
     <div class="container d-flex align-items-center flex-column footerBanner">
       <h1 class="font-weight-bolder footerBannerTitle mb-4">Subscribe for Exclusive Offer</h1>
       <div class="btn-group" role="group" aria-label="Basic example">
@@ -145,11 +146,11 @@
     </div>
   </div>
   <div
-    class="container d-flex justify-content-center fontOpenSans py-4 align-items-center fz_14 justify-content-between-lg">
+    class="container d-flex justify-content-center fontOpenSans py-4 align-items-center fz_14 justify-content-between-lg loginPageHide">
     <div class="row w-100">
       <div class="col-12 reservePageCol d-flex justify-content-center justify-content-md-between align-items-center">
         <div
-          class="d-flex align-items-center justify-content-md-between flex-column-reverse flex-row-md reservePageFooter">
+          class="d-flex align-items-center justify-content-md-between flex-column-reverse flex-md-row reservePageFooter">
           <div class="text-gray-2 mr-md-6 mr-xl-7">
             © 2020 ALOHA, Inc. All rights reserved.
           </div>

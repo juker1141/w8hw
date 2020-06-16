@@ -33,6 +33,12 @@ body {
     display: none;
   }
 }
+.mobileHideBlock {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
 .mobileHide {
   display: none;
   @include media-breakpoint-up(md) {
@@ -89,7 +95,7 @@ body {
 }
 .flex-row-md {
   @include media-breakpoint-up(md) {
-    flex-direction: row !important;
+    flex-dire1ction: row !important;
   }
 }
 .justify-content-between-lg {
@@ -113,6 +119,9 @@ body {
 }
 .zIndex100 {
   z-index: 100;
+}
+.zIndex500 {
+  z-index: 500;
 }
 .zIndexMax {
   z-index: 10000;
@@ -160,9 +169,13 @@ body {
 .verticalLine {
   border-right: solid 1px #e6e3e3c2;
 }
+.h_56 {
+  height: 56px;
+}
 .h_84 {
   height: 84% !important;
 }
+
 .listStyle_none {
   list-style: none;
 }
@@ -174,6 +187,9 @@ body {
       width: 50%;
     }
   }
+}
+.w_200 {
+  width: 200px;
 }
 .textTransform_none {
   text-transform: none;
@@ -320,6 +336,9 @@ body {
 .px_15 {
   padding: 0 15px;
 }
+.mb_32 {
+  margin-bottom: 32px;
+}
 .mx_42 {
   margin: 0 42px;
 }
@@ -329,6 +348,11 @@ body {
 .mt_md_-16 {
   @include media-breakpoint-up(md) {
     margin-top: -16px !important;
+  }
+}
+.mt_xl_80 {
+  @include media-breakpoint-up(xl) {
+    margin-top: 80px !important;
   }
 }
 .ml_-20 {
@@ -351,15 +375,42 @@ body {
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
+.px_32 {
+  padding-right: 32px;
+  padding-left: 32px;
+}
 .px_md_15 {
   padding: 0 !important;
   @include media-breakpoint-up(md) {
     padding: 0 15px !important;
   }
 }
+.pr_md_15 {
+  @include media-breakpoint-up(md) {
+    padding-right: 15px !important;
+  }
+}
 .mb_md_15 {
   @include media-breakpoint-up(md) {
     margin-bottom: 15px;
+  }
+}
+.reserve_mt_auto {
+  margin-top: 48px;
+  @include media-breakpoint-up(md) {
+    margin-top: 417px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 193px;
+  }
+}
+.reserve_success_mt_auto {
+  margin-top: 48px;
+  @include media-breakpoint-up(md) {
+    margin-top: 387px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 163px;
   }
 }
 .result_layout_mt {
@@ -465,4 +516,8 @@ body {
 .roomBImg {
   background: url(../images/roomB.jpg) no-repeat;
 }
-//datepicker設定
+.loginImg {
+  @include media-breakpoint-up(md) {
+    background: url(../images/login.jpg) no-repeat;
+  }
+}
