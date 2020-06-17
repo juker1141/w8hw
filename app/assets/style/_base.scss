@@ -169,6 +169,9 @@ body {
 .verticalLine {
   border-right: solid 1px #e6e3e3c2;
 }
+.h_26 {
+  height: 26px !important;
+}
 .h_56 {
   height: 56px;
 }
@@ -210,6 +213,7 @@ body {
     background: #f1f0f8;
   }
 }
+
 // 取消select預設樣式
 .selectArrowNone {
   appearance: none;
@@ -520,4 +524,7 @@ body {
   @include media-breakpoint-up(md) {
     background: url(../images/login.jpg) no-repeat;
   }
+}
+.profileImg{
+  background: url(../images/profile.jpg) no-repeat;
 }

@@ -85,6 +85,10 @@ $(document).ready(() => {
     case "Login":
       $('.loginPageHide').addClass('d_none');
       break;
+    case "Member":
+      $('.memberPageHide').addClass('d_none');
+      $(".jumbotron").hide();
+      break;
   }
 });
 
