@@ -1,4 +1,6 @@
-$(document).ready(() => {
+"use strict";
+
+$(document).ready(function () {
   //layout
   $(".navbar_menuBtn").click(function (e) {
     e.preventDefault();
@@ -8,9 +10,8 @@ $(document).ready(() => {
   $(".dropdownBtn").click(function (e) {
     e.preventDefault();
     $(".dropdown_menu").toggleClass('active');
-  });
+  }); //index
 
-  //index
   $(".checkBlockBtn").click(function (e) {
     e.preventDefault();
     $(".datepicker").toggleClass('active');
@@ -22,9 +23,8 @@ $(document).ready(() => {
   $(".guestsBlockBtn").click(function (e) {
     e.preventDefault();
     $(".guestsBlock").toggleClass('active');
-  });
+  }); //result
 
-  //result
   $(".sortBtn").click(function (e) {
     e.preventDefault();
     $(".sortList").toggleClass('active');
@@ -43,9 +43,8 @@ $(document).ready(() => {
     e.preventDefault();
     $(".filterBlock").toggleClass('active');
     $(".filterBlock").toggleClass('zIndexMax');
-  });
+  }); //roomdetail
 
-  //roomdetail
   $(".roomTypeBtn").click(function (e) {
     e.preventDefault();
     $(".orderBlock").toggleClass('active');
@@ -53,9 +52,8 @@ $(document).ready(() => {
   $(".orderBtn_cancelBtn").click(function (e) {
     e.preventDefault();
     $(".orderBlock").toggleClass('active');
-  });
+  }); //reserve
 
-  //reserve
   $(".reserveDetailListBtn").click(function (e) {
     e.preventDefault();
     $(".reserveDetailList").toggleClass('active');
@@ -64,10 +62,8 @@ $(document).ready(() => {
     $(".expandLessBtn").toggleClass('active');
     $(".reserveDetailListHead").toggleClass('justify-content-between');
     $(".reserveDetailListHead").toggleClass('justify-content-end');
-  });
+  }); //更改不同頁面的layout
 
-
-  //更改不同頁面的layout
   switch ($('title').text()) {
     case "Result":
       $('.resultLayoutHeader').addClass('loaded');
@@ -77,6 +73,7 @@ $(document).ready(() => {
       $('.btn-group').addClass('resultPageBannerBtn-group');
       $('.emailSubscribeInput').addClass('resultPageBannerInput');
       break;
+
     case "RoomDetail":
       $('.resultLayoutHeader').addClass('loaded');
       $('.py_92').addClass('py-4');
@@ -85,6 +82,7 @@ $(document).ready(() => {
       $('.btn-group').addClass('resultPageBannerBtn-group');
       $('.emailSubscribeInput').addClass('resultPageBannerInput');
       break;
+
     case "Reserve":
       $('.reservePageHide').hide();
       $(".jumbotron").hide();
@@ -92,6 +90,7 @@ $(document).ready(() => {
       $('.reservePageCol').addClass('offset-xl-2');
       $('.reservePageCol').removeClass('justify-content-md-between');
       break;
+
     case "Reserve_success":
       $('.reservePageHide').hide();
       $(".jumbotron").hide();
@@ -99,24 +98,25 @@ $(document).ready(() => {
       $('.reservePageCol').addClass('offset-xl-2');
       $('.reservePageCol').removeClass('justify-content-md-between');
       break;
+
     case "Login":
       $('.loginPageHide').addClass('d_none');
       break;
+
     case "Member":
       $('.memberPageHide').addClass('d_none');
       $('.memberPageShow').addClass('d-flex');
       $(".jumbotron").hide();
       break;
   }
-});
+}); //swiper預設
 
-
-//swiper預設
-const mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    prevEl: '.swiper-button-prev'
+  }
 });
+//# sourceMappingURL=all.js.map
