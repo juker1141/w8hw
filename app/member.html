@@ -5,14 +5,142 @@ engine: ejs
 current: index
 ---
 
-<div class="container mt_navbar">
+<section class="container mt_navbar">
   <div class="row flex-row-reverse">
-    <div class="col-12 col-md-12 col-lg-4 d-flex align-items-end">
-      <div class="font-weight-bold fz_24">Profile</div>
-      <div class="bg-primary fz_12 fontOpenSans rounded-pill px-2 py-1 d-flex align-items-center text-white h_26">
-        <span class="material-icons fz_12">check</span>
-        VERIFIED
+    <section class="col-12 col-md-12 col-xl-4 mb-6 mb-xl-0">
+      <div class="d-flex align-items-center justify-content-between mb-3 mb-md-4">
+        <div class="d-flex align-items-center">
+          <div class="font-weight-bold fz_24 mr-2">Profile</div>
+          <div class="bg-primary fz_12 fontOpenSans rounded-pill px-2 py-1 d-flex align-items-center text-white h_26">
+            <span class="material-icons fz_13 pr_6-25">check</span>
+            VERIFIED
+          </div>
+        </div>
+        <a href="#" class="btn text-primary font-weight-bold fz_14">EDIT</a>
       </div>
+      <div
+        class="d-flex flex-column flex-md-row flex-xl-column bg-purple w-100 p-3 py-md-4 p-xl-4 rounded_8 fontOpenSans">
+        <div class="d-flex justify-content-between w_mdAuto_50">
+          <div class="userDetails">
+            <div class="font-weight-bold mb-4">User details</div>
+            <div class="d-flex">
+              <div class="profileImg userImg rounded_8 mr-3 tabletShow"></div>
+              <ul class="text-gray-2 listStyle_none p-0 mb-4 fz_14">
+                <li class="mb-3">David Lin</li>
+                <li class="mb-3">david0520@mail.com.tw</li>
+                <li>+886 9 32 456 789</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="profileImg userImg rounded_8 tabletHide"></div>
+        </div>
+        <div class="d-flex flex-column w_mdAuto_50">
+          <div class="font-weight-bold mb-4">Payment methods</div>
+          <div class="d-flex">
+            <div class="w-50 bg-white p-3 rounded_8 mr-1 mr-md-2">
+              <ul class="text-gray-2 listStyle_none p-0 m-0 fz_14">
+                <li class="mb-1">xxxx-xxxx-7890</li>
+                <li class="mb-1">DAVID LIN</li>
+                <li class="d-flex justify-content-between align-items-center">
+                  08/2029
+                  <i class="fab fa-cc-visa fd-3x fz_16"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="w-50 bg-white p-3 rounded_8 d-flex align-items-center justify-content-center">
+              <span class="material-icons text-white bg-primary rounded-circle p-1">
+                add
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="col-12 col-md-12 col-xl-8">
+      <div class="font-weight-bold fz_24 mb-4">My Bookings</div>
+      <div class="d-flex mb-4">
+        <a href="#" class="text-primary  font-weight-bold fontOpenSans mr-4">Upcoming</a>
+        <a href="#" class="text-dark font-weight-bold fontOpenSans">Completed</a>
+      </div>
+      <div class="d-flex flex-column flex-md-row rounded_8 fontOpenSans myBookingItem mb-4 mb-md-0">
+        <div class="myBookingImg rachadahotelImg rounded_top rounded_md_left flex-shrink-0"></div>
+        <div class="bg-purple bg_md_transparent p-4 p-md-3 rounded_bottom rounded_md_right w-100">
+          <div class="d-flex flex-column flex-md-row justify-content-md-between">
+            <ul class="listStyle_none p-0 mb-4 mb-md-0">
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">
+                  hotel
+                </span>
+                <div class="font-weight-bold">
+                  Rachada Hotel<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">Deluxe Suite with Pool</div>
+                </div>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">
+                  date_range
+                </span>
+                <div class="font-weight-bold">
+                  17 June 2020 - 19 June 2020<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">2 nights・2 adults</div>
+                </div>
+              </li>
+              <li class="d-flex">
+                <span class="material-icons mr-3">
+                  attach_money
+                </span>
+                <div class="font-weight-bold">
+                  TWD 4,633<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">includes taxes and charges</div>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="text-primary fz_14 font-weight-bold textTransform_uppercase">view details</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-purple my-4 mobileHide">
+      <div class="d-flex flex-column flex-md-row rounded_8 fontOpenSans myBookingItem">
+        <div class="myBookingImg wowlifehotelImg rounded_top rounded_md_left flex-shrink-0"></div>
+        <div class="bg-purple bg_md_transparent p-4 p-md-3 rounded_bottom rounded_md_right w-100">
+          <div class="d-flex flex-column flex-md-row justify-content-md-between">
+            <ul class="listStyle_none p-0 mb-4 mb-md-0">
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">
+                  hotel
+                </span>
+                <div class="font-weight-bold">
+                  WOW Life Hotel<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">Standard Double Room</div>
+                </div>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">
+                  date_range
+                </span>
+                <div class="font-weight-bold">
+                  8 Sep 2020 - 15 Sep 2020<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">7 nights・2 adults</div>
+                </div>
+              </li>
+              <li class="d-flex">
+                <span class="material-icons mr-3">
+                  attach_money
+                </span>
+                <div class="font-weight-bold">
+                  TWD 13,084<br>
+                  <div class="text-gray-2 fz_14 font-weight-normal">includes taxes and charges</div>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="text-primary fz_14 font-weight-bold textTransform_uppercase">view details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="col-12 col-md-12 px_md_15">
+      <hr class="border-purple mb-0 member_mt_auto">
     </div>
   </div>
-</div>
+</section>

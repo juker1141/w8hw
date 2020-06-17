@@ -48,6 +48,9 @@
   &.active {
     display: block;
   }
+  &.zIndexMax {
+    z-index: 10000;
+  }
   @media (min-width: 575px) {
     right: 7vw;
   }
@@ -91,7 +94,7 @@
     height: 25px;
   }
 }
-.card:hover {
+.resultCard:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   text-decoration: none;
   .roomName {

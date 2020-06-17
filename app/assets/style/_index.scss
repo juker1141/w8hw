@@ -55,14 +55,14 @@
 }
 .swiper-slidePlace {
   width: 240px;
-  height: 255px;
+  height: 265px;
   @include media-breakpoint-up(md) {
     width: 270px;
-    height: 272px;
+    height: 285px;
   }
   @include media-breakpoint-up(xl) {
     width: 255px;
-    height: 260px;
+    height: 275px;
   }
 }
 .swiperPlaceImg {

@@ -81,6 +81,15 @@ body {
     display: none;
   }
 }
+.tabletHide {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
 .desktopShow {
   display: none !important;
   @include media-breakpoint-up(xl) {
@@ -123,6 +132,9 @@ body {
 .zIndex500 {
   z-index: 500;
 }
+.zIndex5000 {
+  z-index: 5000;
+}
 .zIndexMax {
   z-index: 10000;
 }
@@ -143,8 +155,27 @@ body {
     border-radius: 0.5rem !important;
   }
 }
+.rounded_8 {
+  border-radius: 8px;
+}
 .rounded_10 {
   border-radius: 10px;
+}
+.rounded_top {
+  border-radius: 8px 8px 0 0;
+}
+.rounded_md_left {
+  @include media-breakpoint-up(md) {
+    border-radius: 8px 0 0 8px;
+  }
+}
+.rounded_bottom {
+  border-radius: 0 0 8px 8px;
+}
+.rounded_md_right {
+  @include media-breakpoint-up(md) {
+    border-radius: 0 8px 8px 0;
+  }
 }
 .rounded_left {
   border-top-left-radius: 0.25rem !important;
@@ -191,6 +222,15 @@ body {
     }
   }
 }
+.w_mdAuto_50 {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+}
 .w_200 {
   width: 200px;
 }
@@ -213,7 +253,9 @@ body {
     background: #f1f0f8;
   }
 }
-
+.boxShadow_hoverNone:hover {
+  box-shadow: none !important;
+}
 // 取消select預設樣式
 .selectArrowNone {
   appearance: none;
@@ -328,6 +370,9 @@ body {
 .pr_1 {
   padding-right: 4px !important;
 }
+.pr_6-25 {
+  padding-right: 6.25px;
+}
 .py_10 {
   padding: 10px 0;
 }
@@ -415,6 +460,15 @@ body {
   }
   @include media-breakpoint-up(xl) {
     margin-top: 163px;
+  }
+}
+.member_mt_auto {
+  margin-top: 48px;
+  @include media-breakpoint-up(md) {
+    margin-top: 54px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 133px;
   }
 }
 .result_layout_mt {
@@ -525,6 +579,6 @@ body {
     background: url(../images/login.jpg) no-repeat;
   }
 }
-.profileImg{
+.profileImg {
   background: url(../images/profile.jpg) no-repeat;
 }
