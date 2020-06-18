@@ -13985,9 +13985,8 @@ body {
   opacity: 0;
 }
 
-.bg_dark_opacity_10 {
-  background: #121212;
-  opacity: 0.9;
+.bg_dark_opacity_9 {
+  background: rgba(18, 18, 18, 0.9);
 }
 
 @media (min-width: 768px) {
@@ -15016,6 +15015,9 @@ body {
     right: 0;
     width: auto;
     display: block;
+  }
+  .filterBlock.zIndexMax {
+    z-index: 300;
   }
 }
 
