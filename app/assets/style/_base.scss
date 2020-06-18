@@ -5,260 +5,7 @@ body {
   overflow-x: hidden !important;
   font-family: "Raleway", sans-serif;
 }
-// 小元件
-.d_none {
-  display: none !important;
-}
-.lh_1 {
-  line-height: 1 !important;
-}
-.lh_15 {
-  line-height: 1.5 !important;
-}
-.mobileShow {
-  display: flex;
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-}
-.mobileShowBlock {
-  display: block;
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-}
-.mobileShow_xl {
-  display: flex;
-  @include media-breakpoint-up(xl) {
-    display: none;
-  }
-}
-.mobileHideBlock {
-  display: none;
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
-}
-.mobileHide {
-  display: none;
-  @include media-breakpoint-up(md) {
-    display: flex;
-  }
-  &_lg {
-    display: none;
-    @include media-breakpoint-up(lg) {
-      display: flex;
-    }
-  }
-  &_xl {
-    display: none;
-    @include media-breakpoint-up(xl) {
-      display: flex;
-    }
-  }
-  &_xl_block {
-    display: none;
-    @include media-breakpoint-up(xl) {
-      display: block;
-    }
-  }
-}
-.mobileDesktopShow {
-  display: flex;
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-  @include media-breakpoint-up(xl) {
-    display: flex;
-  }
-}
-.tabletShow {
-  display: none;
-  @include media-breakpoint-up(md) {
-    display: flex;
-  }
-  @include media-breakpoint-up(xl) {
-    display: none;
-  }
-}
-.tabletHide {
-  display: flex;
-  @include media-breakpoint-up(md) {
-    display: none;
-  }
-  @include media-breakpoint-up(xl) {
-    display: flex;
-  }
-}
-.desktopShow {
-  display: none !important;
-  @include media-breakpoint-up(xl) {
-    display: flex !important;
-  }
-}
-.desktopHide {
-  display: flex !important;
-  @include media-breakpoint-up(xl) {
-    display: none !important;
-  }
-}
-.flex-row-md {
-  @include media-breakpoint-up(md) {
-    flex-dire1ction: row !important;
-  }
-}
-.justify-content-between-lg {
-  @include media-breakpoint-up(lg) {
-    justify-content: space-between !important;
-  }
-}
-.d-flex-xl {
-  @include media-breakpoint-up(xl) {
-    display: flex;
-  }
-}
-.positionTop_0 {
-  top: 0;
-}
-.positionTopLayout {
-  top: 56px;
-  @include media-breakpoint-up(md) {
-    top: 72px;
-  }
-}
-.zIndex100 {
-  z-index: 100;
-}
-.zIndex500 {
-  z-index: 500;
-}
-.zIndex5000 {
-  z-index: 5000;
-}
-.zIndexMax {
-  z-index: 10000;
-}
-.navbarHeightAuto {
-  height: 56px;
-  @include media-breakpoint-up(md) {
-    height: 72px;
-  }
-}
-.mt_navbar {
-  margin-top: 56px;
-  @include media-breakpoint-up(md) {
-    margin-top: 72px;
-  }
-}
-.rounded_md {
-  @include media-breakpoint-up(md) {
-    border-radius: 0.5rem !important;
-  }
-}
-.rounded_8 {
-  border-radius: 8px;
-}
-.rounded_10 {
-  border-radius: 10px;
-}
-.rounded_top {
-  border-radius: 8px 8px 0 0;
-}
-.rounded_md_left {
-  @include media-breakpoint-up(md) {
-    border-radius: 8px 0 0 8px;
-  }
-}
-.rounded_bottom {
-  border-radius: 0 0 8px 8px;
-}
-.rounded_md_right {
-  @include media-breakpoint-up(md) {
-    border-radius: 0 8px 8px 0;
-  }
-}
-.rounded_left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important;
-}
-.rounded_right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
-}
-.opacity_0 {
-  opacity: 0;
-}
-.bg_dark_opacity_9 {
-  background: rgba(18,18,18, 0.9);
-}
-.opacity_md_1 {
-  @include media-breakpoint-up(md) {
-    opacity: 1;
-  }
-}
-.verticalLine {
-  border-right: solid 1px #e6e3e3c2;
-}
-.h_26 {
-  height: 26px !important;
-}
-.h_56 {
-  height: 56px;
-}
-.h_84 {
-  height: 84% !important;
-}
 
-.listStyle_none {
-  list-style: none;
-}
-.w_50 {
-  width: 50%;
-  &_xl {
-    width: auto;
-    @include media-breakpoint-up(xl) {
-      width: 50%;
-    }
-  }
-}
-.w_mdAuto_50 {
-  width: 100%;
-  @include media-breakpoint-up(md) {
-    width: 50%;
-  }
-  @include media-breakpoint-up(md) {
-    width: 100%;
-  }
-}
-.w_200 {
-  width: 200px;
-}
-.textTransform_none {
-  text-transform: none;
-}
-.textTransform_uppercase {
-  text-transform: uppercase;
-}
-.textDecorationNone {
-  text-decoration: none;
-}
-.bg_md_transparent {
-  @include media-breakpoint-up(md) {
-    background: transparent !important;
-  }
-}
-.bg_md_purple {
-  @include media-breakpoint-up(md) {
-    background: #f1f0f8;
-  }
-}
-.boxShadow_hoverNone:hover {
-  box-shadow: none !important;
-}
-// 取消select預設樣式
-.selectArrowNone {
-  appearance: none;
-}
 //字體設定
 .fontRoboto {
   font-family: "Roboto", sans-serif;
@@ -272,6 +19,7 @@ body {
 .fontRaleway {
   font-family: "Raleway", sans-serif;
 }
+
 // 字體大小
 .fz_8 {
   font-size: 8px;
@@ -359,13 +107,285 @@ body {
     font-size: 24px;
   }
 }
-// 推移工具
-.py_92 {
-  padding: 92px 0;
+
+// displayNone
+.d_none {
+  display: none !important;
 }
-.mr_30 {
-  margin-right: 30px !important;
+
+//RWD顯示消失元件類
+.mobileShow {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
 }
+.mobileShowBlock {
+  display: block;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+.mobileShow_xl {
+  display: flex;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+.mobileHideBlock {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+.mobileHide {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  &_lg {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
+  &_xl {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+  }
+  &_xl_block {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+}
+.mobileDesktopShow {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
+.tabletShow {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+.tabletHide {
+  display: flex;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
+.desktopShow {
+  display: none !important;
+  @include media-breakpoint-up(xl) {
+    display: flex !important;
+  }
+}
+.desktopHide {
+  display: flex !important;
+  @include media-breakpoint-up(xl) {
+    display: none !important;
+  }
+}
+
+//客製flex
+.flex-row-md {
+  @include media-breakpoint-up(md) {
+    flex-dire1ction: row !important;
+  }
+}
+.justify-content-between-lg {
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between !important;
+  }
+}
+.d-flex-xl {
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}
+.positionTop_0 {
+  top: 0;
+}
+.positionTopLayout {
+  top: 56px;
+  @include media-breakpoint-up(md) {
+    top: 72px;
+  }
+}
+
+//z-index
+
+.zIndex100 {
+  z-index: 100;
+}
+.zIndex500 {
+  z-index: 500;
+}
+.zIndex5000 {
+  z-index: 5000;
+}
+.zIndexMax {
+  z-index: 10000;
+}
+
+//外框圓角樣式
+
+.rounded_md {
+  @include media-breakpoint-up(md) {
+    border-radius: 0.5rem !important;
+  }
+}
+.rounded_8 {
+  border-radius: 8px;
+}
+.rounded_10 {
+  border-radius: 10px;
+}
+.rounded_top {
+  border-radius: 8px 8px 0 0;
+}
+.rounded_md_left {
+  @include media-breakpoint-up(md) {
+    border-radius: 8px 0 0 8px;
+  }
+}
+.rounded_bottom {
+  border-radius: 0 0 8px 8px;
+}
+.rounded_md_right {
+  @include media-breakpoint-up(md) {
+    border-radius: 0 8px 8px 0;
+  }
+}
+.rounded_left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+.rounded_right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+//透明度
+
+.opacity_0 {
+  opacity: 0;
+}
+.bg_dark_opacity_9 {
+  background: rgba(18, 18, 18, 0.9);
+}
+.opacity_md_1 {
+  @include media-breakpoint-up(md) {
+    opacity: 1;
+  }
+}
+
+//垂直線
+
+.verticalLine {
+  border-right: solid 1px #e6e3e3c2;
+}
+
+//取消增加全大寫 ps 後面才發現有可以這樣寫
+.textTransform_none {
+  text-transform: none;
+}
+.textTransform_uppercase {
+  text-transform: uppercase;
+}
+
+// 取消select預設樣式
+.selectArrowNone {
+  appearance: none;
+}
+
+//底線取消
+.textDecorationNone {
+  text-decoration: none;
+}
+
+//背景類
+.bg_md_transparent {
+  @include media-breakpoint-up(md) {
+    background: transparent !important;
+  }
+}
+.bg_md_purple {
+  @include media-breakpoint-up(md) {
+    background: #f1f0f8;
+  }
+}
+
+//取消ul,li樣式
+.listStyle_none {
+  list-style: none;
+}
+
+//行高類別
+.lh_1 {
+  line-height: 1 !important;
+}
+.lh_15 {
+  line-height: 1.5 !important;
+}
+
+//高度客製
+.h_26 {
+  height: 26px !important;
+}
+.h_56 {
+  height: 56px;
+}
+.h_84 {
+  height: 84% !important;
+}
+.navbarHeightAuto {
+  height: 56px;
+  @include media-breakpoint-up(md) {
+    height: 72px;
+  }
+}
+
+//寬度客製
+.w_50 {
+  width: 50%;
+  &_xl {
+    width: auto;
+    @include media-breakpoint-up(xl) {
+      width: 50%;
+    }
+  }
+}
+.w_mdAuto_50 {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+}
+.w_200 {
+  width: 200px;
+}
+
+// padding推移工具
+
 .pr_1 {
   padding-right: 4px !important;
 }
@@ -378,46 +398,14 @@ body {
 .py_12 {
   padding: 12px 0;
 }
+.py_92 {
+  padding: 92px 0;
+}
 .px_12 {
   padding: 0 12px;
 }
 .px_15 {
   padding: 0 15px;
-}
-.mb_32 {
-  margin-bottom: 32px;
-}
-.mx_42 {
-  margin: 0 42px;
-}
-.mt_-12 {
-  margin-top: -12px;
-}
-.mt_md_-16 {
-  @include media-breakpoint-up(md) {
-    margin-top: -16px !important;
-  }
-}
-.mt_xl_80 {
-  @include media-breakpoint-up(xl) {
-    margin-top: 80px !important;
-  }
-}
-.ml_-20 {
-  margin-left: -20px;
-}
-.mt_-24 {
-  margin-top: -24px;
-}
-.mx_-24 {
-  margin-right: -24px;
-  margin-left: -24px;
-}
-.mb_128 {
-  margin-bottom: 128px;
-}
-.my_xl_20 {
-  margin: 20px 0;
 }
 .px_15 {
   padding-right: 15px !important;
@@ -438,9 +426,52 @@ body {
     padding-right: 15px !important;
   }
 }
+
+//margin推移工具
+
+.mr_30 {
+  margin-right: 30px !important;
+}
+.mb_32 {
+  margin-bottom: 32px;
+}
+.mb_128 {
+  margin-bottom: 128px;
+}
+.mt_-12 {
+  margin-top: -12px;
+}
+.mt_-24 {
+  margin-top: -24px;
+}
+.ml_-20 {
+  margin-left: -20px;
+}
+.mx_42 {
+  margin: 0 42px;
+}
+
+.mx_-24 {
+  margin-right: -24px;
+  margin-left: -24px;
+}
+.my_xl_20 {
+  margin: 20px 0;
+}
+
 .mb_md_15 {
   @include media-breakpoint-up(md) {
     margin-bottom: 15px;
+  }
+}
+.mt_md_-16 {
+  @include media-breakpoint-up(md) {
+    margin-top: -16px !important;
+  }
+}
+.mt_xl_80 {
+  @include media-breakpoint-up(xl) {
+    margin-top: 80px !important;
   }
 }
 .reserve_mt_auto {
@@ -479,13 +510,18 @@ body {
     margin-top: 176px;
   }
 }
+.mt_navbar {
+  margin-top: 56px;
+  @include media-breakpoint-up(md) {
+    margin-top: 72px;
+  }
+}
 // 背景圖片
 .logoImg {
   background: url(../images/logo-aloha.svg) no-repeat;
   height: 24px;
   width: 96px;
 }
-
 .indexBannerImg {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/index-banner.jpg) no-repeat;
 }
