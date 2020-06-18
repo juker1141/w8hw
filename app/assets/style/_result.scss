@@ -64,6 +64,9 @@
     right: 0;
     width: auto;
     display: block;
+    &.zIndexMax {
+      z-index: 300;
+    }
   }
 }
 .mobileFilterBtn {
